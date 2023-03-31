@@ -1,6 +1,6 @@
 # nvv-moe
-my personal website.
+my personal website.  this is where everything pushes from to minimize headaches...
 
-trying to setup my website to automatically push here, and update changes from here.  i have no idea what i'm doing.
+https://nvv.moe to find the actual site.
 
-https://nvv.moe
+thank you for viewing!  :)
