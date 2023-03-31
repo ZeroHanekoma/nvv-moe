@@ -1,0 +1,34 @@
+body {
+	margin: 50px;
+	background-color: #000;
+	background-image: url("../img/debt-to-the-deathless.jpg");
+}
+
+h1 {
+	color: blue;
+	position: relative; 
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#main{
+	padding: 25px;
+	margin-top: 5px;
+	background-color: rgba(0,0,0,0.75);
+}
+
+#sidebar img{
+	width: 50%;
+}
+
+#content {
+	color: white;
+}
+
+#footer {
+	color: #777777;
+	text-align: center;
+	position: relative;
+	padding-top: 50px;
+	FONT-SIZE: 12px;
+}
