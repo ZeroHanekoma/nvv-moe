@@ -1,14 +1,17 @@
 body {
 	margin: 50px;
 	background-color: #000;
-	background-image: url("../img/debt-to-the-deathless.jpg");
+	background-image: url("../img/wall.jpg");
 }
 
-h1 {
-	color: blue;
+#head {
 	position: relative; 
 	text-align: center;
 	padding-bottom: 25px;
+}
+
+#head h1 {
+	color: blue;
 }
 
 #main{
@@ -17,8 +20,29 @@ h1 {
 	background-color: rgba(0,0,0,0.75);
 }
 
+ /* unvisited link */
+.nav-item a:link {
+  color: white;
+}
+
+/* visited link */
+.nav-item a:visited {
+  color: white;
+}
+
+/* mouse over link */
+.nav-item a:hover {
+  color: blue;
+}
+
+/* selected link */
+.nav-item a:active {
+  color: blue;
+} 
+
 #sidebar img{
-	width: 50%;
+	/*width: 50%;*/
+	padding-left: 75px;
 }
 
 #content {
