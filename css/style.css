@@ -1,24 +1,12 @@
+/* PRIMARY TAGS */
+
 body {
 	margin: 50px;
 	background-color: #000;
 	background-image: url("../img/wall.jpg");
 }
 
-#head {
-	position: relative; 
-	text-align: center;
-	padding-bottom: 25px;
-}
-
-#head h1 {
-	color: blue;
-}
-
-#main{
-	padding: 25px;
-	margin-top: 5px;
-	background-color: rgba(0,0,0,0.75);
-}
+/* CLASS TAGS */
 
  /* unvisited link */
 .nav-item a:link {
@@ -40,19 +28,46 @@ body {
   color: blue;
 } 
 
+/* ID TAGS */
+
+#head {
+	position: relative; 
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#head h1 {
+	color: blue;
+}
+
+#main{
+	padding: 25px;
+	margin-top: 5px;
+	color: #FFF;
+}
+
 #sidebar img{
 	/*width: 50%;*/
 	padding-left: 75px;
 }
 
-#content {
+#content{
 	color: white;
 }
 
-#footer {
+#footer{
 	color: #777777;
 	text-align: center;
 	position: relative;
 	padding-top: 50px;
 	FONT-SIZE: 12px;
+}
+
+
+#about h3{
+	text-align: center;
+}
+
+#about abbr{
+	text-decoration: none;
 }
