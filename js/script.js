@@ -12,8 +12,10 @@ function toggleDarkMode() {
   var themeLink = document.getElementById("theme-link");
   if (document.body.classList.contains("dark-mode")) {
     themeLink.href = "css/style-dark.css";
+    localStorage.setItem("darkMode", "true"); // Update user preference in local storage
   } else {
     themeLink.href = "css/style.css";
+    localStorage.setItem("darkMode", "false"); // Update user preference in local storage
   }
 }
 
@@ -21,18 +23,13 @@ function toggleDarkMode() {
 if (localStorage.getItem("darkMode") === "true") {
   // Enable dark mode
   document.body.classList.add("dark-mode");
-  document.getElementById("theme-link").href = "css/color-dark.css";
+  document.getElementById("theme-link").href = "css/style-dark.css";
+} else {
+  document.getElementById("theme-link").href = "css/style.css";
 }
 
 // Add event listener to the toggle button
 document.getElementById("toggle-btn").addEventListener("click", function () {
   // Toggle dark mode on button click
   toggleDarkMode();
-
-  // Update user preference in local storage
-  if (document.body.classList.contains("dark-mode")) {
-    localStorage.setItem("darkMode", "true");
-  } else {
-    localStorage.setItem("darkMode", "false");
-  }
 });
