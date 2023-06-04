@@ -1,27 +1,27 @@
-// script.js
+// JavaScript
 
+// Function to toggle dark mode
 function toggleDarkMode() {
-    const body = document.body;
-    const linkElement = document.getElementById('theme-link');
+    // Toggle the "dark-mode" class on the body element
+    document.body.classList.toggle("dark-mode");
+  }
   
-    body.classList.toggle('dark-mode');
+  // Check if the user preference is stored
+  if (localStorage.getItem("darkMode") === "true") {
+    // Enable dark mode
+    document.body.classList.add("dark-mode");
+  }
   
-    if (body.classList.contains('dark-mode')) {
-      linkElement.href = '/css/style-dark.css';
-      localStorage.setItem('darkMode', 'enabled');
+  // Add event listener to the toggle button
+  document.getElementById("toggle-btn").addEventListener("click", function () {
+    // Toggle dark mode on button click
+    toggleDarkMode();
+    
+    // Update user preference in local storage
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("darkMode", "true");
     } else {
-      linkElement.href = '/css/style.css';
-      localStorage.setItem('darkMode', 'disabled');
+      localStorage.setItem("darkMode", "false");
     }
-  }
-  
-  document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
-  
-  // Check if dark mode preference is saved
-  const savedPreference = localStorage.getItem('darkMode');
-  
-  if (savedPreference === 'enabled') {
-    document.body.classList.add('dark-mode');
-    document.getElementById('theme-link').href = '/css/style-dark.css';
-  }
+  });
   
