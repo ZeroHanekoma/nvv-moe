@@ -1,0 +1,106 @@
+/* PRIMARY TAGS */
+
+body {
+	margin: 50px;
+	background-color: #000;
+	background-image: url("../img/wall-dark.jpg");
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff; /* Update text color to light */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff; /* Update text color to light */
+}
+
+/* CLASS TAGS */
+
+.nav-item a:link,
+.nav-item a:visited {
+	color: #fff; /* Update link color to light */
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+	color: #00f;
+}
+
+/* ID TAGS */
+
+#head {
+	position: relative;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#head h1 {
+	color: #077fff;
+}
+
+#main {
+	padding: 25px;
+	margin-top: 5px;
+	color: #fff; /* Update text color to light */
+	background-image: url("../img/body_wall-dark.jpg");
+}
+
+#content {
+	color: #fff; /* Update text color to light */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer {
+	color: #777777;
+	text-align: center;
+	position: relative;
+	padding-top: 50px;
+	font-size: 12px;
+}
+
+#about h3 {
+	text-align: center;
+}
+
+#about abbr {
+	text-decoration: none;
+}
+/* Light Mode */
+.button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none; /* Remove outline when button is focused */
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+/* Dark Mode */
+.button-dark {
+	background-color: #fff;
+	color: #000;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none; /* Remove outline when button is focused */
+}
+
+.button-dark:hover {
+	background-color: #000;
+	color: #fff;
+}

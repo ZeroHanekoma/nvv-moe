@@ -2,72 +2,106 @@
 
 body {
 	margin: 50px;
-	background-color: #000;
+	background-color: #fff; 
 	background-image: url("../img/wall.jpg");
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000; 
 }
 
 /* CLASS TAGS */
 
- /* unvisited link */
-.nav-item a:link {
-  color: white;
-}
-
-/* visited link */
+.nav-item a:link,
 .nav-item a:visited {
-  color: white;
+	color: #000; 
 }
 
-/* mouse over link */
-.nav-item a:hover {
-  color: blue;
-}
-
-/* selected link */
+.nav-item a:hover,
 .nav-item a:active {
-  color: blue;
-} 
+	color: #00f; 
+}
 
 /* ID TAGS */
 
 #head {
-	position: relative; 
+	position: relative;
 	text-align: center;
 	padding-bottom: 25px;
 }
 
 #head h1 {
-	color: blue;
+	color: #077fff; 
 }
 
-#main{
+#main {
 	padding: 25px;
 	margin-top: 5px;
-	color: #FFF;
+	color: #000; /* Update text color to dark */
+	background-image: url("../img/body_wall.jpg");
 }
 
-#sidebar img{
-	/*width: 50%;*/
-	padding-left: 75px;
+#content {
+	color: #000; /* Update text color to dark */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#content{
-	color: white;
-}
-
-#footer{
+#footer {
 	color: #777777;
 	text-align: center;
 	position: relative;
 	padding-top: 50px;
-	FONT-SIZE: 12px;
+	font-size: 12px; /* Correct the font-size property */
 }
 
-
-#about h3{
+#about h3 {
 	text-align: center;
 }
 
-#about abbr{
+#about abbr {
 	text-decoration: none;
+}
+
+/* Light Mode */
+.button {
+	background-color: #fff;
+	color: #000;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none; /* Remove outline when button is focused */
+}
+
+.button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+/* Dark Mode */
+.button-dark {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	font-size: 14px;
+	cursor: pointer;
+	outline: none; /* Remove outline when button is focused */
+}
+
+.button-dark:hover {
+	background-color: #fff;
+	color: #000;
 }

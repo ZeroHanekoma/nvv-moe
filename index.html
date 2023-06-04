@@ -9,7 +9,8 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
 	<!-- End of Bootstrap Stuff -->
 
@@ -17,32 +18,20 @@
 
 
 	<!-- My Stuff -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<style>
-		body,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: Helvetica, Arial, sans-serif;
-		}
-	</style>
+	<link id="theme-link" rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 	<div class="container-fluid" id="head">
-		<h1 class="display-1 shadow-lg">いらっしゃいませ!</h1>
-		<h2 class="display-8 shadow-lg">You have found my website!</h2>
+		<h1 class="display-1">いらっしゃいませ!</h1>
+		<h2 class="display-8">You have found my website!</h2>
 	</div>
 	<script src="js/script.js"></script>
 	<!-----------------------------
 		Navbar Stuff 
 		------------------------------>
-	<nav class="navbar navbar-expand-sm bg-dark">
+	<nav class="navbar navbar-expand-sm">
 		<div class="container-fluid">
 			<ul class="navbar-nav">
 				<li class="nav-item">
@@ -63,59 +52,65 @@
 		------------------------------>
 
 	<div class="container-fluid" id="main">
-		<!-- Temporary div to show that we're under construction loool -->
-		<div class="alert alert-warning alert-dismissible fade show">
-			<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-			<strong>Sorry it's a mess we're UNDER CONSTRUCTION!</strong>.
-		</div>
-
-		<div class="container">
-			<div class="row" id="landing">
-				<div class="col" id="sidebar">
-					<img src="img/lain.gif" class="float-start" alt="all love lain" />
-				</div>
-				<div class="col" id="content">
-					<p class="lead">i want to make professional website but i am small indie developer</p>
-					<br />
-					<p>please be understand</p>
+		<div class="container" id="content">
+			<div class="col-md-6">
+				<div class="row" id="landing">
+					<div class="col" id="sidebar">
+						<img src="img/lain.gif" class="float-start" alt="all love lain" />
+					</div>
+					<div class="col" id="content">
+						<p><strong class="lead">i want to make professional website </strong> <br />but i am small indie
+							developer please be understand</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container" id="about">
-			<div class="row">
-				<div class="col">
-					<h3>About Me</h3>
-					<p>
-						I am a 30 year old loser who works full-time, draws, and likes to code in HTML for fun.<br/>
-						I live somewhere in the hills of California.<br/>
-						I'm incredibly anti-social.<br/>
-						I really, really like coffee and sweets.<br/>
-						There is <abbr title="btw i use arch">nothing</abbr> else to know.
-					</p>
-				</div>
-				<div class="col">
-					<img src="img/theauthor.png" class="float-start" alt="yes, you can use this picture for stuff."/>
+			<div class="col-md-6">
+				<div class="row" id="about">
+					<div class="col">
+						<h3>About Me</h3>
+						<p>
+							I am a loser who is around 30 years old and works full-time, draws, and likes to code in
+							HTML
+							for fun.<br />
+							I live somewhere in the hills of California.<br />
+							I'm incredibly anti-social.<br />
+							I really, really like coffee and sweets.<br />
+							There is <abbr title="btw i use arch">nothing</abbr> else to know.
+						</p>
+					</div>
+					<div class="col">
+						<img src="img/theauthor.png" class="float-start"
+							alt="yes, you can use this picture for stuff." />
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
 	<!-----------------------------
 		Footer Stuff Goes Here 
 		------------------------------>
 	<div class="col" id="footer">
 		<p>
+			<button id="dark-mode-toggle">Toggle Dark Mode</button>
+			<br />
 			<small>
-				Anything on this website I made you can steal freely and use.  Steal this whole page, I don't care.<br />
-				This only applies to everything within the <a href="https://www.github.com/ZeroHanekoma/nvv-moe">GitHub Repo</a>, everything else will have its respective copyright or whatever.<br/>
-				anything else not owned by the admin, is subject to the respective rights of their respective owners. <br />
+				Anything on this website I made you can steal freely and use. Steal this whole page, I don't care.<br />
+				This only applies to everything within the <a href="https://www.github.com/ZeroHanekoma/nvv-moe">GitHub
+					Repo</a>, everything else will have its respective copyright or whatever.<br />
+				anything else not owned by the admin, is subject to the respective rights of their respective owners.
+				<br />
 				Powered by <a href="https://getbootstrap.com/">bootstrap</a>
 			</small>
 		</p>
 	</div>
 
 	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 </body>
 <!-- 
 
@@ -123,4 +118,5 @@
 ngmi
 
 -->
+
 </html>
