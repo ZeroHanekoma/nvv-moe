@@ -6,7 +6,7 @@ https://nvv.moe to find the actual site.
 thank you for viewing!  :)
 
 Parts of the website do not push from this github directory.  Only the main landing page, and any other subpages hosted in here wil be pushed.
-All services in this github, owned by me, will be MIT licensed, unless explicitly stated otherwise.
+All services in this github, owned by me, will be CC0 licensed, unless explicitly stated otherwise.
 
 basically i'm saying feel free to steal my code.  and anything in the imgs folder.  i either found it online, or don't care that much about it.
 
