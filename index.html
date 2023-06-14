@@ -1,126 +1,359 @@
 <!DOCTYPE html>
 <!-- The key to coding a successful webpage is stealing code from W3Schools and modifying it ;) -->
 <html lang="en">
+  <head>
+    <title>nvv.moe</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Bootstrap Stuff -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <!-- End of Bootstrap Stuff -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- My Stuff -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" id="theme-link" href="css/light.css" />
+  </head>
 
-<head>
-	<title>nvv.moe</title>
-	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-	<!-- Bootstrap Stuff -->
+  <body>
+    <header class="container-fluid" id="head">
+      <h1 class="display-1">いらっしゃいませ!</h1>
+      <h2 class="display-8">You have found my website!</h2>
+    </header>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Navbar Stuff -->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <div class="col">
+          <img
+            src="img/theauthor.png"
+            class="float-start"
+            alt="yes, you can use this picture for stuff."
+            id="author"
+          />
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://hitleris.gay" target="_blank"
+              >My Other Site</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://zerohanekoma.github.io"
+              target="_blank"
+              >My Startpage</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tot/">My Comic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/ZeroHanekoma/"
+              >My Github</a
+            >
+          </li>
+        </ul>
+        <button id="toggle-btn" class="button btn" type="button">
+          Toggle Dark Mode
+        </button>
+        <script src="js/script.js"></script>
+      </div>
+    </nav>
 
-	<!-- End of Bootstrap Stuff -->
+    <!-- Main Content Goes Here -->
+    <div class="container-fluid" id="main">
+      <div class="container" id="content">
+        <!-- Left Sidebar Content Goes Here -->
+        <div class="col-md-2">
+          <div class="row" id="landing">
+            <div class="col" id="sidebar">
+              <img
+                src="img/lain.gif"
+                class="float-start"
+                alt="all love lain"
+                id="lain"
+              />
+            </div>
+            <div class="col" id="content">
+              <p>
+                <strong class="lead"
+                  >I want to make a professional website</strong
+                >
+                <br />
+                but I am a small indie developer, please understand
+              </p>
+            </div>
+          </div>
+        </div>
 
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Right Sidebar Content Goes Here -->
+        <div class="col-md-10" id="right">
+          <div class="row" id="about">
+            <div class="col">
+              <h3>About Me</h3>
+              <p>
+                I am a loser who is around 30 years old and works full-time,
+                draws, and likes to code in HTML for fun.<br />
+                I live somewhere in the hills of California.<br />
+                I'm incredibly anti-social.<br />
+                I really, really like coffee and sweets.<br />
+                There is
+                <abbr title="by the way, I use Arch Linux" id="blue"
+                  >nothing</abbr
+                >
+                else to know.
+              </p>
+            </div>
+          </div>
 
+          <!-- Lists -->
+          <div class="row g-2" id="lists">
+            <div class="col-4">
+              <h3>Top 5 Anime</h3>
+              <ol>
+                <li>
+                  Welcome to the NHK <span class="release-year">(2006)</span>
+                </li>
+                <li>
+                  Puella Magi Madoka&star;Magica
+                  <span class="release-year">(2011)</span>
+                </li>
+                <li>Nichijou <span class="release-year">(2011)</span></li>
+                <li>FLCL <span class="release-year">(2000)</span></li>
+                <li>
+                  Tengen Toppa Gurren Lagann
+                  <span class="release-year">(2007)</span>
+                </li>
+              </ol>
+            </div>
+            <div class="col-4">
+              <h3>Top 5 Video Games</h3>
+              <ol>
+                <li>
+                  Devil May Cry 3 <span class="release-year">(2005)</span>
+                </li>
+                <li>
+                  Team Fortress 2 <span class="release-year">(2007)</span>
+                </li>
+                <li>
+                  The World Ends With You
+                  <span class="release-year">(2007)</span>
+                </li>
+                <li>
+                  Ghost Trick: Phantom Detective
+                  <span class="release-year">(2010)</span>
+                </li>
+                <li>Dragon's Dogma <span class="release-year">(2012)</span></li>
+              </ol>
+            </div>
+            <div class="col-4">
+              <h3>Top 5 Albums</h3>
+              <ol>
+                <li>
+                  Lincoln - <i>They Might Be Giants</i>
+                  <span class="release-year">(1988)</span>
+                </li>
+                <li>
+                  Remain in Light - <i>Talking Heads</i>
+                  <span class="release-year">(1980)</span>
+                </li>
+                <li>
+                  The Man Who Sold the World - <i>David Bowie</i>
+                  <span class="release-year">(1970)</span>
+                </li>
+                <li>
+                  A Match and Some Gasoline - <i>Suicide Machines</i>
+                  <span class="release-year">(2001)</span>
+                </li>
+                <li>
+                  Madvillainy - <i>Madvillain</i>
+                  <span class="release-year">(2004)</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="container">
+            <h3>I Had No Idea What Else to Put Here.</h3>
+			<center><img src="img/itoddler.gif" alt="iToddlers BTFO"/></center>
+            <p>
+              Oh, dear Apple enthusiast, it pains me to witness your blind
+              devotion to a corporation that thrives on marketing hype. Allow me
+              to express my disappointment in your choice of allegiance. As we
+              say in California, it appears that pouring piss out of a boot with
+              instructions on the heel would be an easier task for you than
+              seeing through Apple's clever tactics. You are a mere pawn,
+              blindly following the path laid out by Cupertino. Your obsession
+              with Apple is like a festering sore that refuses to heal, an
+              affliction upon your critical thinking. I would rather endure the
+              company of a lawyer than be associated with someone like you.
+            </p>
 
-	<!-- My Stuff -->
-	<link rel="stylesheet" href="css/style.css">
-	<link id="theme-link" rel="stylesheet" href="css/color.css">
+            <p>
+              You are a feeble-minded follower, willingly succumbing to Apple's
+              aura of exclusivity. Your breath reeks of conformity, devoid of
+              any independent thought. You have become degenerate, surrendering
+              your autonomy and embracing a lifestyle of superficiality. Your
+              very existence debases me, for it reminds me of the pervasive
+              consumerism that plagues our society. I despise everything about
+              your blind devotion to Apple. You are nothing more than a
+              brainwashed caricature, mindlessly consuming their overpriced
+              products, perpetuating the cycle of status-seeking and
+              materialism.
+            </p>
 
-</head>
+            <p>
+              You are a pitiful creature, a parasitic leech attached to Apple's
+              ecosystem. Your life revolves around brand allegiance, a hollow
+              monument to the shallowness of your choices. You exude a stench of
+              artificiality, repulsing those who value true innovation and
+              freedom of choice. Your presence is an insult to the diversity and
+              creativity that exists outside the walled garden of Apple's
+              ecosystem.
+            </p>
 
-<body>
-	<div class="container-fluid" id="head">
-		<h1 class="display-1">いらっしゃいませ!</h1>
-		<h2 class="display-8">You have found my website!</h2>
-	</div>
-	<!-----------------------------
-		Navbar Stuff 
-		------------------------------>
-	<nav class="navbar navbar-expand-sm">
-		<div class="container-fluid">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="https://hitleris.gay" target="_blank">My Other Site</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://zerohanekoma.github.io" target="_blank">My Startpage</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="tot/">My Comic</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="https://github.com/ZeroHanekoma/">My Github</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+            <p>
+              You are a bleating fool, a sheep in the herd of Apple devotees.
+              Your mind is so clouded with Apple's marketing rhetoric that you
+              have become a curdled, stumbling mutant dwarf, incapable of
+              discerning reality from the illusion crafted by Apple's slick
+              advertising campaigns. You are an insensate calf, blindly
+              following the herd, abandoned by those who brought you into this
+              world as they realized the magnitude of their mistake.
+            </p>
 
-	<!-----------------------------
-		Main Content Goes Here 
-		------------------------------>
+            <p>
+              Belonging to the same species as you fills me with profound
+              embarrassment. Your blind devotion to Apple has turned you into a
+              monstrous being, an arrogant ogre devoid of critical thinking. The
+              mere thought of your mindless worship of Apple makes me want to
+              retch. Your presence is as appealing as a paper cut, repelling
+              even the most ardent Apple enthusiasts. You are vile, worthless, a
+              mere cog in Apple's profit-driven machinery. You are a weed
+              choking the garden of technological progress, a fungus spreading
+              the dogma of closed systems and restricted innovation. And, of
+              course, I must mention the lingering scent of overpriced Apple
+              products that surrounds you.
+            </p>
 
-	<div class="container-fluid" id="main">
-		<div class="container" id="content">
-			<div class="col-md-6">
-				<div class="row" id="landing">
-					<div class="col" id="sidebar">
-						<img src="img/lain.gif" class="float-start" alt="all love lain" />
-					</div>
-					<div class="col" id="content">
-						<p><strong class="lead">i want to make professional website </strong> <br />but i am small indie
-							developer please be understand</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="row" id="about">
-					<div class="col">
-						<h3>About Me</h3>
-						<p>
-							I am a loser who is around 30 years old and works full-time, draws, and likes to code in
-							HTML
-							for fun.<br />
-							I live somewhere in the hills of California.<br />
-							I'm incredibly anti-social.<br />
-							I really, really like coffee and sweets.<br />
-							There is <abbr title="btw i use arch">nothing</abbr> else to know.
-						</p>
-					</div>
-					<div class="col">
-						<img src="img/theauthor.png" class="float-start"
-							alt="yes, you can use this picture for stuff." />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <p>
+              If, by some miracle, you possess a modicum of intelligence, you
+              have surely squandered it on embracing Apple's closed ecosystem.
+              You have failed to grasp the fundamental principles of
+              technological freedom and consumer choice. Your personality is as
+              bland as Apple's user interface, lacking any depth or character.
+              You are a dank, lifeless soul, trapped in the confines of a gilded
+              cage constructed by Apple's marketing team. Your asinine and
+              benighted worldview is a testament to the power of manipulation
+              and branding.
+            </p>
 
+            <p>
+              You are the source of all that is unpleasant in the world of
+              technology. Your unwavering support of Apple spreads misery and
+              sorrow to those seeking true innovation and openness. Your
+              unwarranted idolization of a company reflects your ignorance and
+              cluelessness about the broader technological landscape. You are a
+              prime example of the harmful effects of Apple's monopolistic
+              practices and closed ecosystem.
+            </p>
 
-	<!-----------------------------
-		Footer Stuff Goes Here 
-		------------------------------>
-	<div class="col" id="footer">
-		<p>
-			<button id="toggle-btn" class="button" type="button">Toggle Dark Mode</button>
-			<script src="js/script.js"></script>
-			<br />
-			<small>
-				Anything on this website I made you can steal freely and use. Steal this whole page, I don't care.<br />
-				This only applies to everything within the <a href="https://www.github.com/ZeroHanekoma/nvv-moe">GitHub
-					Repo</a>, everything else will have its respective copyright or whatever.<br />
-				anything else not owned by the admin, is subject to the respective rights of their respective owners.
-				<br />
-				Powered by <a href="https://getbootstrap.com/">bootstrap</a>
-			</small>
-		</p>
-	</div>
+            <p>
+              I struggle to comprehend the immense level of stupidity you
+              possess, especially when it comes to your unwavering loyalty to
+              Apple. Your mind is so depleted of rationality that it has
+              collapsed upon itself, forming a dense singularity of sheer
+              foolishness. Your intellect is trapped within this singularity,
+              unable to escape the event horizon of your Apple-induced delusion.
+              Your stupidity emits a gravitational pull that eclipses the
+              intelligence of our entire galaxy. You are a cosmic anomaly, a
+              quasar of stupidity. Your writing must surely be an intentional
+              act of trolling, for no sentient being could genuinely exhibit
+              such mind-numbing ignorance. Your existence challenges the very
+              fabric of our universe, defying the laws of reason and common
+              sense. I apologize, but I cannot continue this discourse. Your
+              immense stupidity has drained me of the strength to engage with
+              your misguided beliefs and uninformed comments. Duh.
+            </p>
 
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
+            <p>
+              Perhaps, in the future, once you have liberated your mind from the
+              clutches of Apple's closed ecosystem, you will find the capacity
+              to read, write, spell, and count beyond the limited confines of
+              the Apple world. These basic skills, which most of us
+              &quot;normal&quot; individuals take for granted, may present a
+              challenge for someone so deeply entrenched in the Apple mindset. I
+              sincerely wish you the best of luck as you navigate the emotional
+              and social struggles that accompany your devotion to a
+              corporation. May you find liberation from the chains of Apple's
+              influence.
+            </p>
 
-</body>
-<!-- 
+            <p>
+              P.S.: It is important for me to point out that your blind
+              admiration for Apple is not only hypocritical but also
+              detrimental. Apple's greed knows no bounds as they exploit their
+              loyal fan base, perpetuating a cycle of consumerism and planned
+              obsolescence. Their business practices are tainted with avarice
+              and their products are often overpriced and tasteless. Apple's
+              closed ecosystem fosters an atmosphere of control and restriction,
+              stifling innovation and limiting consumer choice. It is
+              disheartening to witness how easily you fall victim to their
+              deceptive marketing tactics. Your idolization of Apple reflects a
+              fundamental lack of understanding and critical thinking. Your
+              unwavering support for a company that exhibits such unethical
+              behavior and engages in anti-competitive practices is truly
+              disturbing.
+            </p>
+          </div>
 
->he doesn't code his own front page from scratch
-ngmi
+          <!-- End Right Bar Content -->
+        </div>
+      </div>
+    </div>
 
--->
+    <!-- Footer Stuff Goes Here -->
+    <footer class="col" id="footer">
+      <p>
+        <br />
+        <small>
+          The content, including code and art assets, hosted on this website and
+          within the associated GitHub repository, is licensed under the
+          Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
+          This means that, to the extent possible under law, the website owner
+          has waived all copyright and related rights to the content, allowing
+          you to freely use, modify, and distribute it without attribution or
+          restrictions. However, please note that this CC0 license only applies
+          to the content within the GitHub repository and associated services,
+          and other parts of the website may have their own licensing terms and
+          conditions. Please ensure that you review the appropriate licenses for
+          content outside the GitHub repository. All content not created by the
+          website owner is subject to the respective rights of their respective
+          owners
+          <br />
+          Powered by <a href="https://getbootstrap.com/">Bootstrap</a>
+        </small>
+      </p>
+    </footer>
 
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--
+    >he doesn't code his own front page from scratch
+    ngmi
+  -->
+    <img src="" alt="Mascot" class="mascot" id="mascot-image" />
+    <script src="js/mascot.js"></script>
+  </body>
 </html>

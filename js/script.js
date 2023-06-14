@@ -1,5 +1,3 @@
-// JavaScript
-
 // Function to toggle dark mode
 function toggleDarkMode() {
   // Toggle the "dark-mode" class on the body element
@@ -11,10 +9,10 @@ function toggleDarkMode() {
   // Update the theme link href based on the dark mode state
   var themeLink = document.getElementById("theme-link");
   if (document.body.classList.contains("dark-mode")) {
-    themeLink.href = "css/style-dark.css";
+    themeLink.href = "css/dark.css";
     localStorage.setItem("darkMode", "true"); // Update user preference in local storage
   } else {
-    themeLink.href = "css/style.css";
+    themeLink.href = "css/light.css";
     localStorage.setItem("darkMode", "false"); // Update user preference in local storage
   }
 }
@@ -23,9 +21,9 @@ function toggleDarkMode() {
 if (localStorage.getItem("darkMode") === "true") {
   // Enable dark mode
   document.body.classList.add("dark-mode");
-  document.getElementById("theme-link").href = "css/style-dark.css";
+  document.getElementById("theme-link").href = "css/dark.css";
 } else {
-  document.getElementById("theme-link").href = "css/style.css";
+  document.getElementById("theme-link").href = "css/light.css";
 }
 
 // Add event listener to the toggle button
