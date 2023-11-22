@@ -95,3 +95,8 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 33.33%;
   max-width: 33.33%;
 }
+
+
+.reddit-text {
+	color: #789922;
+}
