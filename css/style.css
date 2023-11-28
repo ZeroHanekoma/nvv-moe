@@ -8,6 +8,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.other-content {
+	text-align: center;
+	margin: 25px;
+}
+ul {
+	list-style: none;
+	display: inline;
+}
+
+ul a {
+	display: block;
+	font-style: none;
+	font-size: 20px;
+}
+
 #head {
   position: relative;
   text-align: center;
@@ -95,7 +110,6 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 33.33%;
   max-width: 33.33%;
 }
-
 
 .reddit-text {
 	color: #789922;
