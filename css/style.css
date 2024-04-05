@@ -1,0 +1,36 @@
+
+body {
+  margin: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+	display: inline;
+}
+
+ul a {
+	display: block;
+	font-style: none;
+	font-size: 20px;
+	width: 25vh;
+	background-color: black;
+	color: white;
+}
+
+.mascot {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  z-index: -1;
+  max-height: 40vh;
+  min-height: 25vh;
+}
+
+.reddit-text {
+	color: #789922;
+}
