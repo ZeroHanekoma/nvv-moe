@@ -1,16 +1,14 @@
 # nvv-moe
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 my personal website.  this is where everything pushes from to minimize headaches...
 
 https://nvv.moe to find the actual site.
 
 thank you for viewing!  :)
 
-Parts of the website do not push from this github directory.  Only the main landing page, and any other subpages hosted in here wil be pushed.
-All services in this github, owned by me, will be CC0 licensed, unless explicitly stated otherwise.
 
-basically i'm saying feel free to steal my code.  and anything in the imgs folder.  i either found it online, or don't care that much about it.
+> [!WARNING]
+> I'm currently redesigning the site because Bootstrap is old and dated and ugly web 2.0 anyway.
 
-If you're a business owner, copyright holder, or some other legal thing and you want your stuff taken down;
-abuse email is at admin at nvv.moe
-
-otherwise, enjoy my stuff.
+#License
+You can steal anything.  I really do not care.  All code is CC0, as I believe all code should be.  TAKE IT.  TAKE IT ALL.
