@@ -10,6 +10,6 @@ thank you for viewing!  :)
 > [!WARNING]
 > I'm currently redesigning the site because Bootstrap is old and dated and ugly web 2.0 anyway.
 
-#License
+##License
 
 You can steal anything.  I really do not care.  All code is CC0, as I believe all code should be.  TAKE IT.  TAKE IT ALL.
