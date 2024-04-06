@@ -245,3 +245,11 @@ p {
   max-height: 30vh;
   min-height: 20vh;
 }
+
+/* Add a media query for mobile devices */
+@media (max-width: 600px) { /* Adjust the max-width as needed for your design */
+  .mascot {
+    max-height: 15vh; /* Smaller height for mobile devices */
+    min-height: 10vh;
+  }
+}
