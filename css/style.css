@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face
@@ -35,6 +37,15 @@ h4,
 h5,
 h6 {
   font-family: Helvetica, Arial, sans-serif;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .container {
@@ -57,10 +68,11 @@ h6 {
 .content {
   margin-top: 10px;
   margin-left: 50px;
+  margin-bottom: 10vw;
   border: rgb(0,120,200);
   border-style: inset;
   padding: 50px;
-  background-color: rgb(4,4,12);
+  background-color: rgba(4,4,12,0.5);
 }
 
 
@@ -78,6 +90,46 @@ h6 {
   color:hotpink;
 }
 
+#site-links a {
+  display: inline-block;
+	font-family: haxrcorp, monospace;
+  font-style: none;
+  font-size: 25px;
+  max-width: 25vh;
+  color: white;
+  background-color: rgb(0,0,20);
+  border:rgb(40, 120, 200);
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  color: rgb(0, 160, 250);
+  text-decoration: none;
+}
+
+#site-links a:hover {
+  text-decoration: underline;
+}
+
+#greenpills {
+  margin: 15px;
+  padding-top: 20px;
+}
+
+#greenpills li {
+  color: #3A5F41;
+  padding: 2px;
+}
+
+#flex {
+  display: flex;
+}
+
+#me {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+
 .funfacts {
   list-style: none;
   color: #789922;
@@ -86,6 +138,19 @@ h6 {
 .funfacts li:before {
   content:">";
   color: #789922;
+}
+
+.recommendations ul {
+  list-style: none;
+}
+
+.list-item {
+  color: rgb(0,120,255);
+}
+
+.description {
+  font-style: italic;
+  font-size: 12px;
 }
 
 
@@ -97,24 +162,21 @@ h6 {
 
 .header {
   margin-left: 50px;
-  margin-top: 50px;
   display: block;
 }
 
 .header h1 {
   color: rgb(0, 160, 250);
 	font-family: haxrcorp, monospace;
-  font-size: 40px;
-}
-
-.navlinks {
-  margin: 5px;
+  font-size: 35px;
+  margin-top: 0;
 }
 
 .greeting {
   font-size: 32px;
   color: rgb(0, 120, 255);
 	font-family: haxrcorp, monospace;
+	margin-top: 15px;
 }
 
 .navlinks ul {
@@ -158,9 +220,12 @@ h6 {
 .footer {
 	font-family: haxrcorp, monospace;
   font-size: 18px;
-  position: absolute;
-  bottom: 1vh;
-  left: 5vw;
+  position: fixed;
+  bottom: 0vh;
+  left: 1vw;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
 }
 
 .footer a {
@@ -176,7 +241,7 @@ h6 {
   position: fixed;
   bottom: 0vh;
   right: 1vw;
-  z-index: -1;
+  z-index: 2;
   max-height: 30vh;
   min-height: 20vh;
 }
